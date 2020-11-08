@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="5dp"
+                android:onClick="showFormulasList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                >
+                <LinearLayout
+
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+
+                            android:src="@drawable/icon_trigonometry"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fórmulas"
+                            android:textSize="35dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/preto"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="onEnterBhaskara"
+                    android:id="@+id/id_enterBhaskara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text="Bhaskara"
+                    android:textColor="@color/preto"
+                    android:textSize="25dp" />
+                    <TextView
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:onClick="onEnterGCD"
+                        android:id="@+id/id_enterGCD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:text="Maior Divisor Comum"
+                        android:textColor="@color/preto"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="5dp"
+        android:onClick="showTrigoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        >
+        <LinearLayout
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+
+                    android:src="@drawable/icon_trigonometry"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trigonometria"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/preto"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="onEnterSohcahtoa"
+                android:id="@+id/id_sohcahtoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text="Cos/sen/tan"
+                android:textColor="@color/preto"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="showAlgebraLinearList"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="2dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+                <LinearLayout
+
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        android:src="@drawable/algebra_linear_icon"/>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Algebra Linear"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/preto"/>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+                    <TextView
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/id_enter_determinantes"
+                        android:onClick="enterDeterminantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Determinantes"
+                        android:textSize="25dp"
+                        android:textColor="@color/preto"
+                        android:layout_marginLeft="55dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/id_enter_matrizMultiplication"
+                        android:onClick="enterMatrizMultiplication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Operações de Matrizes"
+                        android:textSize="25dp"
+                        android:textColor="@color/preto"
+                        android:layout_marginLeft="55dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

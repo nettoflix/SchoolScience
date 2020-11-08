@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/id_exitDialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:background="@drawable/oval_shape"
+        android:gravity="center"
+        android:onClick="exitDialogClick"
+        android:text="X"
+        android:textColor="@color/vermelho"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_quadratic_delta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delta:"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_quadratic_dialog_delta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_dialog_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultados:"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_quadratic_dialog_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raíz de Delta:"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_dialog_sqrtOfDelta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Sqrt de Delta"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_b.b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:text="b^2:" />
+
+        <TextView
+            android:id="@+id/id__dialog_b.b_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_4ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="4ac:"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id__dialog_4ac_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/branco"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

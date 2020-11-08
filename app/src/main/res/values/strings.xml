@@ -1,0 +1,38 @@
+<resources>
+    <string name="title1">Matérias</string>
+    <string name="app_name">School</string>
+    <string name="Matemática">Matemática</string>
+    <string name="title_activity_math">MathActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string-array name="subjects">
+        <item>Determinantes</item>
+        <item>Fórmula De Crammer</item>
+        <item>Fórmula De Bhaskara</item>
+    </string-array>
+    <string-array name="detType">
+        <item>2x2</item>
+        <item>3x3</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="trigoIntro">
+        As funções trigonométricas são funções que relacionam os ângulos de um círculo com os comprimentos dos lados de um triângulo retângulo
+    </string>
+    <string name="bhaskara_intro">
+        Essa é a famosa equação quadrática, que tem esse nome pois sua incógnita é elevada ao quadrado (x^2).
+        Ela pode ser encontrada em várias formas, mas seu trabalho é simplificá-la para que ela fique organizada assim:
+    </string>
+    <string name="bhaskara_text1">A solução para a equação quadrática pode ser calculada usando a Fórmula De Bhaskara</string>
+    <string name="gcd_description">Usando o algoritimo de Euclides, o MDC permite você achar rapidamente o Maior Divisor Comum entre dois números</string>
+</resources>

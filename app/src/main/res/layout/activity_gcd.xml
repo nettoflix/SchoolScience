@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Matematica.GCDActivity"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/id_gcd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculador MDC"
+        android:textColor="@color/preto"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="16dp"
+        />
+        <TextView
+
+            android:id="@+id/id_gcd_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gcd_description"
+            android:textColor="@color/preto"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/id_gcdheight"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/id_gcdwidth"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+
+                android:inputType="number" />
+            <TextView
+
+                android:id="@+id/id_gcd_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preto"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:background="@color/azulForte"
+        android:id="@+id/id_calcular_gcd"
+        android:onClick="calcularGCD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textColor="@color/branco"/>
+    <sem.allscience.Matematica.EuclidsView
+        android:id="@+id/euclids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/euclids_warning1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A representação gráfica do Algoritmo aparecerá aqui!"
+        android:textColor="@color/preto"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
